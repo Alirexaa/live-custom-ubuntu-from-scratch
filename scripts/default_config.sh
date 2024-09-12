@@ -71,10 +71,10 @@ function customize_image() {
 function install_docker() {
     echo "=====> installing docker ..."
     apt-get install -y \
-    apt-transport-https \
+    #apt-transport-https \
     ca-certificates \ 
-    curl \
-    software-properties-common
+    #curl \
+    #software-properties-common
 
     echo "=====> download docker gpg ..."
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
