@@ -70,7 +70,7 @@ function customize_image() {
 
 function install_docker() {
 
-    apt install -y 
+    apt install -y \
     apt-transport-https \
     ca-certificates \ 
     curl \
